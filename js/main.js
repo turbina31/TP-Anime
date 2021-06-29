@@ -11,14 +11,15 @@ else {
   console.log("Service worker no soportado.");
 }
 
+let main = document.querySelector('section-notification');
+  
 // Event Listener para Offline/ Online Status
 window.addEventListener('offline', event => {
-  let main = document.querySelector('.section-notifications').classList.add('offline');
+  main.style.display = 'block';
 });
 
 window.addEventListener('online', event => {
-  document.querySelector('.section-notifications').classList.remove('offline');
-  buscarAnime(event);
+  main.style.diplay = 'block';
 });
 
 // A veces este evento falla, ojo!
@@ -27,6 +28,6 @@ window.addEventListener('online', event => {
 // if (!navigator.onLine) {
 
 if (!navigator.onLine) {
-  document.querySelector('.section-notifications').classList.add('offline');
+  main.style.display = 'block';
 }
 });
