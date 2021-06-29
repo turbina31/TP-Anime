@@ -4,10 +4,7 @@ header nav h1,a{
 header nav button span{
     background-color: #FF17D8 !important;
 }
-.section-notifications{
-    display: none;
-}
-.offline {
+.section-notifications .offline {
     background-color: darksalmon;
 }
 aside{
