@@ -62,12 +62,17 @@ async function actualizarDom(data) {
                         <div class="card-body text-primary card-img-overlay">
                             <h2>${anime.title}</h2>
                         </div>
-                        <div class="footer">
+                        <div class="row footer">
+                            <div class="col">
                             <p>${anime.score}</p>
-                            <a class="btn btn-primary rounded-circle link" href="${anime.url}" target="_blank">
+                            </div>
+                            <div class="col">
+                            <a class="link" href="${anime.url}" target="_blank">
                             <img src="img/icons/link.svg"></a>
+                            </div>
+                            <div class="col">
                             <div class="dropdown">
-                                <a class="dropdown-toggle bg-primary link2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="img/icons/sinopcis.svg">
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -76,6 +81,8 @@ async function actualizarDom(data) {
                                     <p class="">${anime.synopsis}</p>
                                 </div>
                             </div>
+                            </div> 
+                           
                         </div>
                     </div>
                 `
