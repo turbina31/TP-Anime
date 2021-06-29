@@ -7,6 +7,8 @@ const cache_name = [
   './css/estilos.css',
   './css/material-kit.css',
   './index.html',
+  './imagenes.html',
+  './videos.html',
   './offline/offline.html',
   './offline/style.css',
   './offline/app.js',
