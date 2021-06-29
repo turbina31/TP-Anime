@@ -6,7 +6,7 @@ header nav button span{
 }
 .section-notifications {
     background-color: darksalmon;
-    display: block
+    display: none
 }
 aside{
      display: flex;
@@ -244,7 +244,7 @@ section .card{
 }
 @media screen and (min-width:1000px){
     nav ul li a{
-        color: white !important
+        color: #00f5ff !important;
     }
 }
 @media screen and (min-width:1080px){
