@@ -86,10 +86,3 @@ async function actualizarDom(data) {
             `
     }).join("");
 }
-
-// Escuchemos si esta online
-
-document.addEventListener("escucharEvent", function(e) {
-    e.preventDefault();
-    buscarAnime(e);
-  });
