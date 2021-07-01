@@ -75,6 +75,11 @@ section .card{
     align-content: stretch;
     align-items: center;
 }
+
+footer p span{
+    color:  #C70039
+}
+
 @media screen and (min-width:320px){
     header nav h1{
         font-size: 2em;
