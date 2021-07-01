@@ -4,9 +4,14 @@ header nav h1,a{
 header nav button span{
     background-color: #FF17D8 !important;
 }
-.section-notifications {
-    background-color: darksalmon;
-    display: none
+.alert{
+    z-index: 1050;
+}
+.online{
+    background-color: yellowgreen;
+}
+.offline {
+    background-color: salmon;
 }
 aside{
      display: flex;
@@ -153,6 +158,17 @@ footer p span{
        width: 100%;
         height: 100%
     }
+    footer div{
+        padding: 3%;
+        margin-top: 6%
+    }
+    footer div p{
+        color: white !important;
+    }
+    footer p span{
+        color: crimson;
+        font-size: 1.3em
+    }
 }
 
 @media screen and (min-width:375px){
@@ -177,6 +193,10 @@ footer p span{
     .title-img p{
         font-size: 1em
     }
+    footer div{
+        margin-top: 10%;
+        padding-bottom: 0
+    }
 }
 @media screen and (min-width:440px){
     .videos figure{
@@ -198,6 +218,9 @@ footer p span{
     .principal{
         border-radius: 50px
     }
+    footer div{
+        margin-top: 8%;
+    }
 }
 @media screen and (min-width:700px){
     aside input[type=submit]{
@@ -210,6 +233,9 @@ footer p span{
     /*---*/
     .videos figure{
         height: 390px
+    }
+    footer div{
+        margin-top: 5%;
     }
 }
 @media screen and (min-width:768px){
@@ -230,7 +256,9 @@ footer p span{
     }
 }
 @media screen and (min-width:780px){
-    
+    footer div{
+        margin-top: 4%;
+    }
 }
 @media screen and (min-width:900px){
     header nav h1{
@@ -246,19 +274,19 @@ footer p span{
     .videos figure{
         height: 480px
     }
-}
-@media screen and (min-width:1000px){
-    nav ul li a{
-        color: #00f5ff !important;
+    footer div{
+        margin-top: 3%;
     }
 }
-@media screen and (min-width:1080px){
-    .title-img{
-        padding-bottom: 15%
-    }
-}
+
 @media screen and (min-width:1180px){
     .title-img{
         padding-bottom: 10%
+    }
+    footer{
+        padding-bottom: 1%
+    }
+    footer div{
+        margin-top: 1%;
     }
 }
