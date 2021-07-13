@@ -99,5 +99,5 @@ async function actualizarDom(data) {
 function storage() {
     local.setItem('Dato imagen', document.querySelector('.card-image').value);
 }
-
+storage();
 //img.onchange = storage;
