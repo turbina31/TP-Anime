@@ -6,10 +6,11 @@ const msg = document.querySelector("form .msg");
 
 let cont = document.querySelector("#contenido");
 
-
+let local = window.localStorage;
 
 form.addEventListener("submit", e => {
     e.preventDefault();
+    local.setItem('Dato', input.value);
     buscarAnime(input.value);
 })
 //window.addEventListener("load", paginaCargando);
@@ -93,3 +94,10 @@ async function actualizarDom(data) {
             `
     }).join("");
 }
+//let img = document.querySelector('.card-image');
+
+function storage() {
+    local.setItem('Dato imagen', document.querySelector('.card-image').value);
+}
+
+//img.onchange = storage;
