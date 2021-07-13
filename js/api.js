@@ -94,10 +94,10 @@ async function actualizarDom(data) {
             `
     }).join("");
 }
-//let img = document.querySelector('.card-image');
+let img = document.querySelector('.card-image');
 
 function storage() {
     local.setItem('Dato imagen', document.querySelector('.card-image').value);
 }
-storage();
-//img.onchange = storage;
+
+img.onchange = storage;
