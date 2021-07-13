@@ -10,24 +10,40 @@ if ('serviceWorker' in navigator) {
 else {
   console.log("Service worker no soportado.");
 }
-
-let main = document.querySelector('section-notification');
-  
-// Event Listener para Offline/ Online Status
-window.addEventListener('offline', event => {
-  main.style.display = 'block';
 });
 
-window.addEventListener('online', event => {
-  main.style.diplay = 'block';
-});
+function hasNetwork(online) {
+  let alert = document.querySelector('.alert')
+  const txt1 = document.querySelector(".txt1");
+  const txt2 = document.querySelector(".txt2");
 
-// A veces este evento falla, ojo!
-// Sirve para saber si el navegador esta offline, cuando entramos offline. 
-// Es decir, no se disparo los eventos de arriba aun, y necesito conocer el estado.
-// if (!navigator.onLine) {
-
-if (!navigator.onLine) {
-  main.style.display = 'block';
+  if (online) {
+    txt2.classList.remove("offline");
+    alert.style.backgroundColor = 'yellowgreen'
+    txt2.style.diplay = 'none';
+    txt2.textContent = '';
+    txt1.classList.add("online");
+    txt1.innerText = "Online";
+location.href = '../index.html';
+  } else {
+    alert.style.backgroundColor = 'salmon'
+    txt1.classList.remove("online");
+    txt1.style.diplay = 'none';
+    txt1.textContent = '';
+    txt2.classList.add("offline");
+    txt2.innerText = "Offline";
+location.href = 'offline/offline.html';
+  }
 }
+
+window.addEventListener("load", () => {
+  hasNetwork(navigator.onLine);
+
+  window.addEventListener("online", () => {
+    hasNetwork(true);
+  });
+
+  window.addEventListener("offline", () => {
+    hasNetwork(false);
+  });
 });
