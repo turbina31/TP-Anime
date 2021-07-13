@@ -11,6 +11,7 @@ let local = window.localStorage;
 form.addEventListener("submit", e => {
     e.preventDefault();
     local.setItem('Dato', input.value);
+    local.setItem('Dato imagen', document.querySelector('.card-image').value);
     buscarAnime(input.value);
 })
 //window.addEventListener("load", paginaCargando);
@@ -100,4 +101,4 @@ function storage() {
     local.setItem('Dato imagen', document.querySelector('.card-image').value);
 }
 
-document.querySelector('.card-image').onchange = storage;
+//document.querySelector('.card-image').onchange = storage;
