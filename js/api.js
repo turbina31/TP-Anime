@@ -93,6 +93,7 @@ async function actualizarDom(data) {
                     <section class="div">${animesHTML}</section>   
             `
     }).join("");
+    local.setItem('Dato imagen', document.querySelector('.card-image').value);
 }
 function storage() {
     local.setItem('Dato imagen', document.querySelector('.card-image').value);
