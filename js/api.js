@@ -96,6 +96,7 @@ async function actualizarDom(data) {
 }
 let img = document.querySelector('.card-image');
 function storage() {
-    local.setItem('Dato imagen', img.value);
+    local.setItem('Datos img', JSON.stringify(img));
+    //local.setItem('Dato imagen', img.value);
 }
-window.addEventListener("load", storage);
+//window.addEventListener("load", storage);
