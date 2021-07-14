@@ -24,7 +24,7 @@ function hasNetwork(online) {
     txt2.textContent = '';
     txt1.classList.add("online");
     txt1.innerText = "Online";
-location.href = '../index.html';
+//location.href = '../index.html';
   } else {
     alert.style.backgroundColor = 'salmon'
     txt1.classList.remove("online");
