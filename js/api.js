@@ -94,3 +94,6 @@ async function actualizarDom(data) {
             `
     }).join("");
 }
+function storage() {
+    local.setItem('Dato imagen', document.querySelector('.card-image').value);
+}
