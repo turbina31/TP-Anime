@@ -96,6 +96,16 @@ footer p span{
     .h1{
         font-size: 1.9em
     }
+    .section-notifications, .alert{
+        margin: 0;
+    }
+    .alert .container{
+        padding: 1.5%
+    }
+    .alert img{
+        width: 25px;
+        transform: translateY(-15%)
+    }
     form input[type=submit]{
         background-size: 25%;
         background-position: 95%;
