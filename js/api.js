@@ -98,4 +98,4 @@ let img = document.querySelector('.card-image');
 function storage() {
     local.setItem('Dato imagen', img.value);
 }
-storage();
+window.addEventListener("load", storage);
