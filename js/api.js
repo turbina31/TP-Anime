@@ -99,4 +99,4 @@ function storage() {
     local.setItem('Datos img', JSON.stringify(img));
     //local.setItem('Dato imagen', img.value);
 }
-//window.addEventListener("load", storage);
+window.addEventListener("load", storage);
