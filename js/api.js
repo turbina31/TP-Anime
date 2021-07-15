@@ -88,6 +88,7 @@ async function actualizarDom(data) {
                     </div>
                 `
             }).join("");
+        local.setItem('Datos animes', JSON.stringify(animesHTML));
         return `
                     <section class="div">${animesHTML}</section>   
             `
