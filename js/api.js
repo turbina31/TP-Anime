@@ -88,11 +88,9 @@ async function actualizarDom(data) {
                     </div>
                 `
             }).join("");
-        let img = document.querySelector('.card-image');
-        img.src = src.value;
-        local.setItem('Datos animes', JSON.stringify(img));
         return `
                     <section class="div">${animesHTML}</section>   
             `
     }).join("");
+    local.setItem('Datos animes', JSON.stringify(animeByCategories));
 }
