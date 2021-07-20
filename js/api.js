@@ -96,5 +96,5 @@ async function actualizarDom(data) {
 window.addEventListener('storage', e => {
       e.preventDefault();
     let img = document.getElementsByClassName('card-image');
-    console.info(JSON.parse(local.setItem('otro dato',img.value)));
+    console.info(local.setItem('otro dato',img.value));
   });
