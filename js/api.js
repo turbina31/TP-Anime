@@ -92,5 +92,8 @@ async function actualizarDom(data) {
                     <section class="div">${animesHTML}</section>   
             `
     }).join("");
-    local.setItem('Datos animes', JSON.stringify(animeByCategories));
 }
+window.addEventListener('storage', () => {
+    let img = document.getElementsByClassName('card-image');
+    console.info(JSON.parse(local.setItem('otro dato',img.value)));
+  });
