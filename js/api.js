@@ -93,7 +93,8 @@ async function actualizarDom(data) {
             `
     }).join("");
 }
-window.addEventListener('storage', () => {
+window.addEventListener('storage', e => {
+      e.preventDefault();
     let img = document.getElementsByClassName('card-image');
     console.info(JSON.parse(local.setItem('otro dato',img.value)));
   });
