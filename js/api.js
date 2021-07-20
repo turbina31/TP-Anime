@@ -94,6 +94,8 @@ async function actualizarDom(data) {
     }).join("");
 }
   });
+let img = document.getElementsByClassName('card-image');
+    console.info('otro dato',img.value);
 window.addEventListener('storage', e => {
       e.preventDefault();
     let img = document.getElementsByClassName('card-image');
