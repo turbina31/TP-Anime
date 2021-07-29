@@ -62,12 +62,11 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    (async () => {
-      if ("navigationPreload" in self.registration) {
-        await self.registration.navigationPreload.enable();
-      }
-    })()
+event.waitUntil(
+    caches.open(offline_version)
+    .then(cache => cache.addAll(offline_url))
+    .then(self.skipWaiting())
+  );
   );
 
   // Tell the active service worker to take control of the page immediately.
